@@ -25,10 +25,12 @@ public class UserInputOutput {
 
     public static int getUserChoice() {
 
-        System.out.println("Press 1 - Add Products ");
-        System.out.println("Press 2 - Edit Products ");
-        System.out.println("Press 3 - Delete Products ");
-        System.out.println("Press 4 - Display Products ");
+        System.out.println("Press 1 - Add products ");
+        System.out.println("Press 2 - Edit products ");
+        System.out.println("Press 3 - Delete products ");
+        System.out.println("Press 4 - Display products ");
+        System.out.println("Press 5 - Calculate product price");
+        System.out.println("Press 6 - Exit");
 
         return scanner.nextInt();
     }

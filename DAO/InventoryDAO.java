@@ -2,6 +2,8 @@ package DAO;
 
 import InventoryModel.Inventory;
 import InventoryService.InventoryServiceInterface;
+import Util.UserInputOutput;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,6 +45,16 @@ public class InventoryDAO implements InventoryServiceInterface {
 
         return false;
 
+    }
+
+    @Override
+    public void calculateInventory(String name, double price, double weight) {
+        for (int i = 0; i < productList.size(); i++) {
+            if(productList.get(i).getName().equals(name)){
+                double totalPrice = productList.get(i).getPrice() * productList.get(i).getWeight();
+                System.out.println("The price of product is : "+totalPrice);
+            }
+        }
     }
 
     @Override

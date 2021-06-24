@@ -14,6 +14,8 @@ public interface InventoryServiceInterface {
 
     boolean findByName(String name);
 
+    void calculateInventory(String name, double price, double weight);
+
     List<Inventory> findAll();
 
 }

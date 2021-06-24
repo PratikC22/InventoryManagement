@@ -32,6 +32,11 @@ public class InventoryService implements InventoryServiceInterface {
     }
 
     @Override
+    public void calculateInventory(String name, double price, double weight) {
+        inventoryDAO.calculateInventory(name, price, weight);
+    }
+
+    @Override
     public List<Inventory> findAll() {
 
         return inventoryDAO.findAll();
